@@ -31,10 +31,18 @@ public class Main {
             new Book("978-0132350886", "Effective Java Advanced", "Joshua Bloch SR", "Aljoscha")
         };
 
+
+
         Library myLibrary = new Library(booksArray1);
+        myLibrary.addBook(new Book("978-013235088000", "Effe Java", "Joshuloch", "Dael"));
 
         System.out.println(myLibrary);
 
+        System.out.println(myLibrary.books[2]);
+
+        myLibrary.deleteBook(myLibrary.books[2]);
+
+        System.out.println(myLibrary);
 
     }
 }
