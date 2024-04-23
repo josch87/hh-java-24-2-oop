@@ -38,9 +38,9 @@ public class Main {
 
         System.out.println(myLibrary);
 
-        System.out.println(myLibrary.books[2]);
+        Book bookToDelete = myLibrary.getBooks()[1];
 
-        myLibrary.deleteBook(myLibrary.books[2]);
+        myLibrary.deleteBook(bookToDelete);
 
         System.out.println(myLibrary);
 

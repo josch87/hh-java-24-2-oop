@@ -6,10 +6,14 @@ import java.util.List;
 
 public class Library {
 
-    public Book[] books;
+    private Book[] books;
 
     public Library(Book[] books) {
         this.books = books;
+    }
+
+    public Book[] getBooks() {
+        return books;
     }
 
     public void setBooks(Book[] books) {
